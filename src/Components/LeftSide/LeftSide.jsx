@@ -10,12 +10,12 @@ function LeftSide() {
             <div className="flex flex-col gap-3 p-3 h-[70vh]">
                {/*Div Containing Images of Car */}
                <img
-                  className="object-cover w-full h-[50%]"
+                  className="object-cover w-full h-[50%] rounded-2xl "
                   src={carphoto}
                   alt="CarPhoto"
                />
                <img
-                  className="object-cover w-full h-[50%]"
+                  className="object-cover w-full h-[50%] rounded-2xl"
                   src={carphoto}
                   alt="CarPhoto"
                />
@@ -29,11 +29,12 @@ function LeftSide() {
                   </div>
                </div>
                <div>
-                  <h1 className="text-4xl font-semibold">{Car_Info.carprice }</h1>
+                  <h1 className="text-4xl font-semibold">
+                     {Car_Info.carprice}
+                  </h1>
                </div>
             </div>
-
-            <Contact/>
+            <Contact />
          </div>
       </>
    );
